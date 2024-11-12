@@ -8,6 +8,10 @@ import mediapipe as mp
 from utils import get_mediapipe_pose
 from process_frame import ProcessFrame
 from thresholds import get_thresholds
+import logging
+import warnings
+warnings.filterwarnings('ignore')
+logging.basicConfig(level=logging.INFO)
 
 def main():
     # Set page config
